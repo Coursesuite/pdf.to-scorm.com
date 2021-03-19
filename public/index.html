@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<!-- Primary Meta Tags -->
+	<title>Convert PDF files to SCORM</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="title" content="Convert PDF files to SCORM">
+	<meta name="description" content="Convert any PDF to a simple SCORM package in seconds with this easy, secure and free browser app. Get a completion for reading the document. ">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://pdf.to-scorm.com/">
+	<meta property="og:title" content="Convert PDF files to SCORM">
+	<meta property="og:description" content="Convert any PDF to a simple SCORM package in seconds with this easy, secure and free browser app. Get a completion for reading the document. ">
+	<meta property="og:image" content="https://pdf.to-scorm.com/meta.jpg">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://metatags.io/">
+	<meta property="twitter:title" content="Convert PDF files to SCORM">
+	<meta property="twitter:description" content="Convert any PDF to a simple SCORM package in seconds with this easy, secure and free browser app. Get a completion for reading the document. ">
+	<meta property="twitter:image" content="https://pdf.to-scorm.com/meta.jpg">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
+	<link rel="stylesheet" href="style.css" />
+
+	<script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=es5%2CElement.prototype.classList%2CArrayBuffer%2CDocument%2CString.prototype.replaceAll&flags=gated"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip-utils/0.0.2/jszip-utils.min.js" async="true"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.3/FileSaver.min.js" async="true"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-1Y5EMVRZ54"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'G-1Y5EMVRZ54');
+	</script>
+</head>
+<body>
+
+<section class="uk-section" uk-height-viewport="offset-top: true">
+	<div class="uk-container uk-text-center uk-light uk-height-1-1">
+		<div>
+			<p><img src="logo.svg" class="uk-width-1-3@m uk-width-1-2@s"></p>
+			<h1>Convert PDF files to SCORM</h1>
+			<p>No options. Completion on viewing last page. Based on open source code.</p>
+			<div class="js-upload uk-placeholder uk-text-center">
+			    <span uk-icon="icon: cloud-upload"></span>
+			    <span class="uk-text-middle">Drop your PDF here or</span>
+			    <div uk-form-custom>
+			        <input type="file" accept=".pdf">
+			        <span class="uk-link">select one</span>
+			    </div>
+			</div>
+			<progress id="js-progressbar" class="uk-progress" value="0" max="100" hidden></progress>
+			<p>Need something more comprehensive? Try <a href="https://www.courseassembler.com/">Course Assembler</a>.</p>
+		</div>
+
+	</div>
+</section>
+
+<script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+body {
+	font-family: sans-serif;
+	background-image: linear-gradient( 178.2deg,  rgba(118,8,23,1) 10.9%, rgba(158,12,33,1) 62.6% );
+}
+
+body.drag-over .js-upload {
+	border-style: solid;
+}
